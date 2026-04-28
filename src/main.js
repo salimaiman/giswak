@@ -18,17 +18,28 @@ const categoryColors = {
     'Mushalla': '#34d399', // Emerald-light
     'Sekolah': '#3b82f6',  // Blue
     'Ruang Terbuka Hijau': '#22c55e', // Green
+    'Kemaslahatan Umat': '#f59e0b', // Amber
     'Default': '#8b5cf6' // Violet
 };
 
 async function loadRekapKab() {
-    const response = await fetch('rekap_kab.json');
-    rekapKab = await response.json();
+    try {
+        const response = await fetch('rekap_kab.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        rekapKab = await response.json();
+    } catch (err) {
+        console.error('Failed to load rekap data:', err);
+    }
 }
 
 async function loadKoordinat() {
-    const response = await fetch("data_tanah_cleaned.json");
-    koordinat = await response.json();
+    try {
+        const response = await fetch("data_tanah_cleaned.json");
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        koordinat = await response.json();
+    } catch (err) {
+        console.error('Failed to load land data:', err);
+    }
 }
 
 function createMarkerElement(tanah, labelEl) {
@@ -135,18 +146,20 @@ function renderCategoryFilters(categories) {
     });
 }
 
+const formatPlaceholder = (val) => (val && val !== '-') ? val : '<span class="italic text-gray-400 font-normal">Data belum tersedia</span>';
+
 function openModal(tanah) {
     console.log('Opening modal for:', tanah.pemanfaatan_saat_ini);
     document.getElementById('modalTitle').innerText = tanah.pemanfaatan_saat_ini;
     document.getElementById('modalDesc').innerText = tanah.alamat_lengkap || 'Tidak ada alamat lengkap';
-    document.getElementById('m_kecamatan').innerText = tanah.kecamatan || '-';
-    document.getElementById('m_kabupaten').innerText = tanah.kabupaten || '-';
-    document.getElementById('m_peruntukan').innerText = tanah.peruntukkan_pada_aiw || '-';
-    document.getElementById('m_wakif').innerText = tanah.nama_wakif || '-';
-    document.getElementById('m_nadzir').innerText = tanah.nama_nadzir || '-';
+    document.getElementById('m_kecamatan').innerHTML = formatPlaceholder(tanah.kecamatan);
+    document.getElementById('m_kabupaten').innerHTML = formatPlaceholder(tanah.kabupaten);
+    document.getElementById('m_peruntukan').innerHTML = formatPlaceholder(tanah.peruntukkan_pada_aiw);
+    document.getElementById('m_wakif').innerHTML = formatPlaceholder(tanah.nama_wakif);
+    document.getElementById('m_nadzir').innerHTML = formatPlaceholder(tanah.nama_nadzir);
     document.getElementById('m_luas').innerText = `${tanah.luas || 0} M²`;
     document.getElementById('m_status').innerText = tanah.status_sertifikat === "SUDAH" ? 'Tersertifikasi' : 'Belum Tersertifikasi';
-    document.getElementById('m_sertifikat').innerText = tanah.status_sertifikat === "SUDAH" ? (tanah.no_sertifikat || '-') : ' - ';
+    document.getElementById('m_sertifikat').innerHTML = tanah.status_sertifikat === "SUDAH" ? formatPlaceholder(tanah.no_sertifikat) : '<span class="italic text-gray-400 font-normal">-</span>';
     document.getElementById('m_gmaps').href = `https://www.google.com/maps?q=${tanah.coordinate}`;
 
     const modal = document.getElementById('infoModal');
@@ -174,6 +187,32 @@ window.addEventListener('DOMContentLoaded', async () => {
 
         const categories = [...new Set(koordinat.map(p => p.kategori).filter(Boolean))];
         renderCategoryFilters(categories);
+        
+        // Hide loading spinner
+        const loading = document.getElementById('loadingOverlay');
+        if (loading) {
+            loading.style.opacity = '0';
+            setTimeout(() => loading.style.display = 'none', 500);
+        }
+
+        // Toggle All Button
+        const toggleBtn = document.getElementById('toggleAllBtn');
+        if (toggleBtn) {
+            let allSelected = true;
+            toggleBtn.addEventListener('click', () => {
+                allSelected = !allSelected;
+                toggleBtn.innerText = allSelected ? 'Deselect All' : 'Select All';
+                document.querySelectorAll('#categoryFilters input[type="checkbox"]').forEach(cb => {
+                    cb.checked = allSelected;
+                    if (allSelected) {
+                        selectedCategories.add(cb.value);
+                    } else {
+                        selectedCategories.delete(cb.value);
+                    }
+                });
+                filterMarkers();
+            });
+        }
 
         const palette = [
             '#10b981', '#3b82f6', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#06b6d4'

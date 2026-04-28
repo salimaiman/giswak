@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sistem Informasi Geografis Tanah Wakaf Provinsi Nusa Tenggara Timur - Kementerian Agama RI">
+  <meta name="theme-color" content="#047857">
+  <link rel="icon" href="logo.png" type="image/png">
   <title>GISWAK | Geographic Information System for Wakaf</title>
 
-  <!-- MapLibre & Turf -->
-  <link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet" />
-  <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+  <!-- MapLibre & Turf (Pinned Versions) -->
+  <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" />
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js"></script>
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind CSS (Pinned Version) -->
+  <script src="https://cdn.tailwindcss.com?v=3.4.17"></script>
   
   <!-- Custom Style -->
   <link rel="stylesheet" href="style.css?v=2.0">
@@ -20,6 +23,12 @@
 
 <body class="antialiased bg-gray-50 overflow-hidden">
   
+  <!-- Loading Overlay -->
+  <div id="loadingOverlay" class="fixed inset-0 z-[200] bg-white flex flex-col items-center justify-center transition-opacity duration-500">
+    <div class="w-16 h-16 border-4 border-emerald-200 border-t-emerald-600 rounded-full animate-spin"></div>
+    <p class="mt-4 text-emerald-800 font-semibold animate-pulse">Memuat Peta & Data Wakaf...</p>
+  </div>
+
   <!-- Header -->
   <header class="fixed top-0 left-0 right-0 z-[50] flex items-center justify-between px-6 py-3 bg-emerald-700/90 backdrop-blur-md text-white shadow-lg border-b border-white/10">
     <div class="flex items-center gap-4">
@@ -29,14 +38,26 @@
         <p class="text-[10px] uppercase tracking-[0.2em] opacity-80 font-semibold italic">Geographic Information System for Wakaf</p>
       </div>
     </div>
-    <div class="hidden md:block">
-      <span class="text-xs bg-emerald-800/50 px-3 py-1 rounded-full border border-white/10">Provinsi Nusa Tenggara Timur</span>
+    <div class="hidden md:flex items-center gap-4 text-xs">
+      <div class="bg-emerald-800/50 px-3 py-1 rounded-full border border-white/10 flex items-center gap-2">
+        <span class="font-semibold text-emerald-100">104</span> Bidang
+      </div>
+      <div class="bg-emerald-800/50 px-3 py-1 rounded-full border border-white/10 flex items-center gap-2">
+        <span class="font-semibold text-emerald-100">126.274 m²</span> Luas
+      </div>
+      <div class="bg-emerald-800/50 px-3 py-1 rounded-full border border-white/10 flex items-center gap-2">
+        <span class="font-semibold text-emerald-100">36.5%</span> Sertifikasi
+      </div>
+      <span class="bg-emerald-800/50 px-3 py-1 rounded-full border border-white/10">Nusa Tenggara Timur</span>
     </div>
   </header>
 
   <!-- Filter Sidebar -->
   <div id="filterSidebar" class="fixed top-24 left-6 z-[40] w-64 bg-white/80 backdrop-blur-xl p-6 rounded-2xl shadow-2xl border border-white/40 ring-1 ring-black/5 transition-all duration-300">
-    <h2 class="text-sm font-bold text-gray-800 uppercase tracking-wider mb-4 border-b border-gray-100 pb-2">Filter Kategori</h2>
+    <div class="flex justify-between items-center mb-4 border-b border-gray-100 pb-2">
+      <h2 class="text-sm font-bold text-gray-800 uppercase tracking-wider">Filter Kategori</h2>
+      <button id="toggleAllBtn" class="text-[10px] font-semibold text-emerald-600 hover:text-emerald-800 transition-colors uppercase">Deselect All</button>
+    </div>
     <div id="categoryFilters" class="space-y-1 max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
       <!-- Categories injected here -->
     </div>
