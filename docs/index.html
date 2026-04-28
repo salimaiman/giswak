@@ -54,6 +54,9 @@
 
   <!-- Filter Sidebar -->
   <div id="filterSidebar" class="fixed top-24 left-6 z-[40] w-64 bg-white/80 backdrop-blur-xl p-6 rounded-2xl shadow-2xl border border-white/40 ring-1 ring-black/5 transition-all duration-300">
+    <div class="mb-4">
+      <input type="text" id="searchInput" placeholder="Cari nama, lokasi..." autocomplete="off" class="w-full text-sm px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white/50">
+    </div>
     <div class="flex justify-between items-center mb-4 border-b border-gray-100 pb-2">
       <h2 class="text-sm font-bold text-gray-800 uppercase tracking-wider">Filter Kategori</h2>
       <button id="toggleAllBtn" class="text-[10px] font-semibold text-emerald-600 hover:text-emerald-800 transition-colors uppercase">Deselect All</button>
@@ -62,6 +65,10 @@
       <!-- Categories injected here -->
     </div>
     <div class="mt-4 pt-4 border-t border-gray-100">
+      <button id="exportBtn" class="w-full mb-3 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-[11px] font-bold uppercase tracking-wider rounded-lg transition-colors flex items-center justify-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+        Export Data (CSV)
+      </button>
       <p class="text-[10px] text-gray-500 leading-relaxed italic">Gunakan filter untuk menyaring distribusi tanah wakaf di peta.</p>
     </div>
   </div>

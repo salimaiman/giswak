@@ -11,6 +11,12 @@ let koordinat = [];
 let rekapKab = [];
 let selectedCategories = new Set();
 let markers = [];
+let searchQuery = '';
+
+function updateURLHash() {
+    const cats = Array.from(selectedCategories).join(',');
+    window.location.hash = `search=${encodeURIComponent(searchQuery)}&cats=${encodeURIComponent(cats)}`;
+}
 
 const categoryColors = {
     'Masjid': '#10b981', // Emerald
@@ -96,14 +102,23 @@ function initMarkers(labelEl) {
         markers.push({
             instance: marker,
             element: el,
-            kategori: p.kategori
+            kategori: p.kategori,
+            nama: (p.nama_wakif || '').toLowerCase(),
+            lokasi: ((p.alamat_lengkap || '') + ' ' + (p.kabupaten || '')).toLowerCase(),
+            pemanfaatan: (p.pemanfaatan_saat_ini || '').toLowerCase()
         });
     });
 }
 
 function filterMarkers() {
     markers.forEach(m => {
-        if (selectedCategories.has(m.kategori)) {
+        const matchesCategory = selectedCategories.has(m.kategori);
+        const matchesSearch = searchQuery === '' || 
+            m.nama.includes(searchQuery) || 
+            m.lokasi.includes(searchQuery) || 
+            m.pemanfaatan.includes(searchQuery);
+
+        if (matchesCategory && matchesSearch) {
             m.element.style.visibility = 'visible';
             m.element.style.pointerEvents = 'auto';
         } else {
@@ -111,6 +126,7 @@ function filterMarkers() {
             m.element.style.pointerEvents = 'none';
         }
     });
+    updateURLHash();
 }
 
 function renderCategoryFilters(categories) {
@@ -187,12 +203,78 @@ window.addEventListener('DOMContentLoaded', async () => {
 
         const categories = [...new Set(koordinat.map(p => p.kategori).filter(Boolean))];
         renderCategoryFilters(categories);
+
+        // Load URL State
+        if (window.location.hash) {
+            const hashParams = new URLSearchParams(window.location.hash.slice(1));
+            if (hashParams.has('search')) {
+                searchQuery = hashParams.get('search');
+                const searchInput = document.getElementById('searchInput');
+                if (searchInput) searchInput.value = searchQuery;
+            }
+            if (hashParams.has('cats')) {
+                const cats = hashParams.get('cats').split(',');
+                if (cats[0] !== '') {
+                    selectedCategories.clear();
+                    cats.forEach(c => selectedCategories.add(c));
+                    // Update checkboxes visually
+                    document.querySelectorAll('#categoryFilters input[type="checkbox"]').forEach(cb => {
+                        cb.checked = selectedCategories.has(cb.value);
+                    });
+                }
+            }
+            filterMarkers();
+        }
         
         // Hide loading spinner
         const loading = document.getElementById('loadingOverlay');
         if (loading) {
             loading.style.opacity = '0';
             setTimeout(() => loading.style.display = 'none', 500);
+        }
+
+        // Search Input
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                searchQuery = e.target.value.toLowerCase();
+                filterMarkers();
+            });
+        }
+
+        // Export Button
+        const exportBtn = document.getElementById('exportBtn');
+        if (exportBtn) {
+            exportBtn.addEventListener('click', () => {
+                const visibleKategori = Array.from(selectedCategories);
+                const filteredData = koordinat.filter(p => {
+                    const matchesCategory = visibleKategori.includes(p.kategori);
+                    const nama = (p.nama_wakif || '').toLowerCase();
+                    const lokasi = ((p.alamat_lengkap || '') + ' ' + (p.kabupaten || '')).toLowerCase();
+                    const pemanfaatan = (p.pemanfaatan_saat_ini || '').toLowerCase();
+                    const matchesSearch = searchQuery === '' || nama.includes(searchQuery) || lokasi.includes(searchQuery) || pemanfaatan.includes(searchQuery);
+                    return matchesCategory && matchesSearch;
+                });
+                
+                if (filteredData.length === 0) return alert('Tidak ada data untuk diexport');
+                
+                const headers = Object.keys(filteredData[0]).join(',');
+                const csvRows = filteredData.map(row => {
+                    return Object.values(row).map(val => {
+                        const str = String(val).replace(/"/g, '""');
+                        return `"${str}"`;
+                    }).join(',');
+                });
+                
+                const csvData = [headers, ...csvRows].join('\n');
+                const blob = new Blob([csvData], { type: 'text/csv' });
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'giswak_data.csv';
+                a.click();
+                window.URL.revokeObjectURL(url);
+            });
         }
 
         // Toggle All Button
