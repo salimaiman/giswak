@@ -1,0 +1,105 @@
+kabupaten;kecamatan;alamat_lengkap;peruntukkan_pada_aiw;pemanfaatan_saat_ini;no_sertifikat;tgl_sertifikat;no_aiw;tgl_aiw;nama_wakif;nama_nadzir;luas;coordinate;status_sertifikat;kategori
+Flores Timur;Adonara Timur;Bilal/Honihama;Masjid;Masjid An Nur Honihama;M.5;14/09/92;01/W2/1992;18/02/92;Mustafa Serang;Alias Tena Boli;406;-8.36529643282978, 123.13694416860255;SUDAH;Masjid
+Flores Timur;Adonara Timur;Bilal;Pekuburan Islam;Pekuburan Islam;-;-;AIW/36/1993;20/01/93;Arkian Sili;Ahmad Mamang;1179;-8.386856514672763, 123.1617282818485;SUDAH;Makam
+Flores Timur;Adonara Timur;Waiburak;Langgar;Langgar Nurul Yakin;M 102;05/11/92;13/W2/1992;12/W2/1992;Arkiang Kamba key Helo;Muhammad Saleh;503;-8.386285386086977, 123.17184934925551;SUDAH;Mushalla
+Flores Timur;Adonara Timur;Waiburak/Belle;Masjid;Masjid Al-Kalam Belle;M 166;25/02/94;AIW/46/1993;20/01/93;Kadir kopong Duran;Arifin Tokan;703;-8.383813702798111, 123.1776068061002;SUDAH;Masjid
+Flores Timur;Adonara Timur;Lamahala Jaya;Mushollah;Mushollah Suluk;1;07/01/19;W2/1/001/III/2015;19/03/15;Abubakar Sidik Bethan;Abubakar Sidik Bethan;313;-8.38928382687744, 123.15338720516638;SUDAH;Mushalla
+Flores Timur;Adonara Timur;Waiwerang Kota;Mushollah;Mushollah An-Nur;1;07/01/19;W2a/001/02/2013;02/09/13;Iqbal Anshari Latif;Iqbal Anshari Latif;671;-8.383126562611862, 123.16274722744186;SUDAH;Mushalla
+Flores Timur;Adonara Timur;Waiwerang;Masjid;Masjid Besar Jabal Nur;M 202;14/09/92;11/AIW/1992;12/03/92;Husen Sengaji;H.Hasyim Pua;886;-8.389121184756256, 123.1626034992472;SUDAH;Masjid
+Flores Timur;Adonara Timur;Waiwerang;Mushollah;Musallah Nurul Iman;SDH JADI;SDH JADI;AIW/14/1993;20/01/93;Abdul Hamid Wulan;Abdul Hamid Wulan;179;-8.390058058017019, 123.16455814718358;SUDAH;Mushalla
+Flores Timur;Adonara Timur;Waiwerang;Pekuburan Islam;Pekuburan Islam;USUL;USUL;AIW/45/1993;20/01/93;Pua Boli;Tenama Burhan;1052;-8.38676530359414, 123.16177276537151;SUDAH;Makam
+Flores Timur;Adonara Timur;Narososina Kamp Baru;Masjid;Masjid AlMuttqin Kamp Baru;M 4;15/11/92;12/W2/1992;14/03/92;Ahmad Kia Paun;Muhammae Saleh;1394;-8.375251461257589, 123.16432446565135;SUDAH;Masjid
+Flores Timur;Adonara Timur;Labala;Mushollah;Musallah Baiturrahman;-;-;AIW/36/1994;21/01/93;Mamang Yusuf;Ahmad mamang;828;-8.377804491239056, 123.14614855064589;SUDAH;Mushalla
+Flores Timur;Larantuka;Postoh;Masjid;Masjid Ash-Shamad;M. 69;11/09/92;01/AIW/1991;18/11/91;Mihrab;H. Gunawan;575;-8.338895178928245, 122.99057220070154;SUDAH;Masjid
+Flores Timur;Larantuka;Ekasapta;Masjid;Masjid Agung Ashyuhada;M.125;5/11/19992;01/AIW/1991;01/11/91;Abdul Malik Isnaini;Abdullah Mamang;5652;-8.33385800853118, 122.99619473624388;SUDAH;Masjid
+Flores Timur;Larantuka;Weri;Masjid;Masjid Al-Amin;228;09/03/10;01/AIW/2007;06/01/07;Pemda Kab. Flotim;Bdn. Pengurus masjid Al-Amin Weri;757;-8.301031868923975, 123.01812156993535;SUDAH;Masjid
+Flores Timur;Larantuka;Weri;Pekuburan Islam;Pekuburan Islam;SDH JADI;SDH JADI;SDH JADI;SDH JADI;Pemda Kab. Flotim;H. Arsyad Mahrum;5000;-8.301549364844211, 123.01512205527675;BELUM;Makam
+Flores Timur;Ile Mandiri;Delang;Masjid;Masjid Al Munawwah;M 15;05/11/92;03/AIW/1991;23/11/91;Rahudin Landa;Abubakar Buti;1330;-8.268808245795418, 122.99688947817877;SUDAH;Masjid
+Flores Timur;Tanjung Bunga;Waiklibang;Masjid;Masjid Baitul Mukmin;M 255;14/09/07;5/AIW/2007;10/02/07;Sahar Soru Koten;Hasyim Husain;882;-8.17139156290545, 122.90422438919899;SUDAH;Masjid
+Flores Timur;Tanjung Bunga;Riang Puho;Masjid;Masjid Al Muhajirin;M 01;19/11/92;05/AIW/1992;10/02/92;Ahmat Ataboleng;Hamid Ataboleng;1746;-8.19570520282027, 122.8091014278227;SUDAH;Masjid
+Flores Timur;Solor Timur;Watobuku/Lamakera;Masjid;Masjid Al Ijtihad Lamakera;M 76;04/07/94;W2/18/ST/92;15/11/91;Abdurahman Kelake;H.Burhan Mitan Dasi;1979;-8.434172820417343, 123.16417527633126;SUDAH;Masjid
+Flores Timur;Solor Timur;Wua Bunga;Masjid;Masjid;-;-;01/ST/1990;01/10/90;Muh. Kamarudin;Daud Doni;625;-8.438467928690292, 123.15510669415497;SUDAH;Masjid
+Flores Timur;Solor Timur;Sendiwutumg;Masjid;Masjid Al Hidayah;-;-;W2/30/1992;16/09/92;Guna Pasing;Ratib;3623;-8.345846805090602, 122.97771939786276;SUDAH;Masjid
+Flores Timur;Solor Timur;Gorang;Masjid;Masjid Ar Rahman Gorang;-;-;W2/26/1992;16/09/92;Kewa Amang;-;1452;-8.428551906602207, 123.1307394303039;SUDAH;Masjid
+Flores Timur;Solor Timur;Lohayong-Kebang;Mushollah;Mushollah Al-Furqon Kebang;USUL;USUL;W2/19/1992;16/09/92;Paiman Bai;Besar Husen;300;-8.435639319698751, 123.05436113230896;SUDAH;Mushalla
+Sumba Timur;Kota Waingapu;Hambala;Masjid;Masjid Agung Al-jihad WGP;P.69;17/07/98;w.3a/1/01/92;17/12/92;Pua Umar H.A.F;Umar D. Salawatu;3620;-9.64506854140328, 120.2576631316802;SUDAH;Masjid
+Sumba Timur;Kota Waingapu;Hambala;Masjid;Masjid Al-Huda Hambala;M.202;11/06/85;W.3a/14/01/82;17/02/82;A. Samad Djuma;H. Hasan Aldjufri;513;-9.651073772068965, 120.258294751554;SUDAH;Masjid
+Sumba Timur;Kota Waingapu;Hambala;Masjid;Masjid Al-Falah Kamp. Baru;M.1167;11/09/93;W.3a/08/01/91;16/09/91;Pua Umar;Syarifudin Koho;9680;-9.65197947430608, 120.24594456655014;SUDAH;Masjid
+Sumba Timur;Kota Waingapu;Hambala;Pemakaman;Kuburan Islam Kamp. Baru;M.2329;21/09/04;W.3a/16/01/03;05/04/93;Pua Umar;Zaini;4975;-9.648793403375663, 120.2597074628515;SUDAH;Makam
+Sumba Timur;Kota Waingapu;Hambala;Masjid;Masjid Al-Munawar Kambajawa;M.1934;14/09/91;W.3a/001/01/90;15/10/90;Pua Romu Muka;A. Gader Ali;1712;-9.670305842631674, 120.24907565749521;SUDAH;Masjid
+Sumba Timur;Kota Waingapu;Kamalaputih;Masjid;Masjid At-Taqwa Kamalaputih;M.707;01/10/91;W.3a/004/01/90;16/10/90;Halib Mbulu;Kasim Nur;1629;-9.651702840159878, 120.26537520553028;SUDAH;Masjid
+Sumba Timur;Kota Waingapu;Kamalaputih;Masjid;Masjid Al-Muhajirin Pakamburung;M.1777;09/06/07;W.3a/001/224/06;13/11/06;Soegito Slamet;Joko Suprapto;630;-9.644489132523663, 120.26235953771449;SUDAH;Masjid
+Sumba Timur;Kota Waingapu;Kamalaputih;Masjid;Masjid An-Nur Kamp. Bugis;M.749;01/08/92;W.3a/05/01/91;15/10/91;Nurlailah Atjoh;H. Salim Aldjufri;706;-9.640649882695099, 120.25734411256515;SUDAH;Masjid
+Sumba Timur;Kota Waingapu;Kamalaputih;Sekolah;MIS Waingapu;M.791;21/08/92;W.3a/9/01/91;15/11/91;H. Salim Aldjufri;Salmi S;2400;-9.660979285570912, 120.26740873621227;SUDAH;Sekolah
+Sumba Timur;Kota Waingapu;Kamalaputih;Sekolah;MIN Kamalaputih;M.787;06/07/92;W.3a/7/01/82;15/06/82;Ahmad P. Dammu;Kasim Nur;2320;-9.648716960239975, 120.26628760193087;SUDAH;Sekolah
+Sumba Timur;Kota Waingapu;Kambajawa;Pemakaman;Kuburan Islam Kambajawa;M.1168;11/09/93;W.3a/11/01/90;17/02/90;Thalib Usman;A. Gader Ali;1450;-9.650965354508655, 120.26761106591812;SUDAH;Makam
+Sumba Barat;Kota Waikabubak;Jl. Ahmad Yani Kel. Wailiang;Sekolah;SDI V Waikabubak;24.12.05.14.1.00351;14/09/92;-;-;-;Karamah Bamuaalim;2130;-9.634663150656477, 119.40919451299771;BELUM;Sekolah
+Sumba Barat;Kota Waikabubak;Jl. Pisang Kel. Wailiang;Masjid;Masjid Uswatan Hasanah;24.12.05.14.1.00872;14/11/07;-;-;-;Soleman S.A.Abas;593;-9.634869415481432, 119.40579737264589;BELUM;Masjid
+Sumba Barat;Kota Waikabubak;Jl. Pisang Kel. Wailiang;Sekolah;TK. ABA Waikabubak;24.12.08.04.1.00790;22/12/03;-;-;Hj. Mujnah Radjak;PD. Muhammadiyah;1610;-9.63444492671374, 119.40561159235901;BELUM;Sekolah
+Sumba Barat;Kota Waikabubak;Jl. Ahmad Yani Kel. Maliti;Kuburan Islam;Kuburan Islam;24.12.05.09.1.00352;14/09/92;-;-;-;Karamah Bamualim;3190;-9.636057814446232, 119.40985867896129;BELUM;Makam
+Sumba Barat;Tana Righu;Desa Lokory Kec. Tana Righu;Masjid;Masjid An-Nur Lokory;24.12.06.16.1.00003;25/04/94;-;-;H. Abdul Latif;Masjid Lokory;875;-9.419752769934084, 119.40076396516487;BELUM;Masjid
+Alor;Kec. ABAL;Pulau Buaya;PEKUBURAN;Pekuburan Islam pulau Buaya;241/95;27/02/94;-;-;-;Sarif Mani;2330;-8.182258674363515, 124.37691926659079;BELUM;Makam
+Alor;Kec. ABAL;Desa Adang;MASJID;Masjid Nurul Bahri Kokar;157/95;13/02/95;-;-;-;-;1800;-8.24527056989429, 124.21757949652137;BELUM;Masjid
+Alor;Kec. Pantar Timur;-;MADRASAH;MTS S. Ombay;-;-;-;-;Musctar Usman;-;0;-8.275847654282117, 124.30070655697996;BELUM;Sekolah
+Alor;Kec. Pantar Timur;-;KEBUN;Kebun Masjid;-;-;-;-;Haji Lebe;-;0;-8.278345085110221, 124.30279018813839;BELUM;Ruang Terbuka Hijau
+Alor;Kec. Pantar Barat;Baraler;MASJID;Masjid Babul Khair Beangonong;147/91;30/12/91;-;-;-;Sinung batu;1500;-8.310278458589217, 124.03124485798006;BELUM;Masjid
+Alor;Kec. Pantar Barat;Baraler;MASJID;Masjid Ansharullah Pulau Kura;147/91;30/12/91;-;-;-;lamaju mau;0;-8.367192150591329, 124.098595133796;BELUM;Masjid
+Sabu Raijua;Sabu Barat;Menia;Mushola;-;-;-;-;-;-;-;2035;-10.492560168841544, 121.84055340147899;BELUM;Mushalla
+Malaka;Malaka Tengah;Wehali;Masjid Al Jihad Betun;Masjid Agung Betun;1;27/01/01;W3/001/05/2000;28/07/00;Abud bin Ahmad;Abud bin Ahmad;1600;-9.562104113493962, 124.92092006163848;SUDAH;Masjid
+Malaka;Malaka Tengah;Wehali;Masjid Al Qadr Betun;Masjid Besar Betun;187;28/12/93;W2/51/5/1989;09/06/89;Nurdin Kemang;Masjid Al Qadr Betun;1775;-9.563370545611086, 124.90951916003816;SUDAH;Masjid
+Malaka;Malaka Tengah;Wehali;Kuburan Islam I Betun;Kuburan Islam Kab.Malaka;271;13/07/92;102/04/X/5/BA.03.2/91;08/10/09;Nurdin Kemang;Nurdin Kemang;895;-9.563324610455771, 124.90331488368705;SUDAH;Makam
+Malaka;Malaka Tengah;Kletek;Masjid Al Falah Kletek;Masjid Jami Kletek;1;19/12/03;W3/001/95/2002;02/03/02;Anderias Tahu;Salim Attubel;2380;-9.582183782498301, 124.94194597449452;SUDAH;Masjid
+Malaka;Malaka Tengah;Wehali;Kemaslahatan Ummat;NU Center Kab.Malaka;374;26/02/14;W2/01/Kua.19.21.1/02/2018;01/02/18;Rabisa Barama;Pengurus NU Kab. Malaka;1400;-9.567755934854642, 124.91033930558488;SUDAH;Kemaslahatan Umat
+Kupang;KUPANG TENGAH;MANIKIN, KEL. TARUS KEC. KUPANG TENGAH KAB. KUPANG;Masjid;MASJID AL FALAH;494;3/ /1993;-;-;-;-;180;-10.126059313144408, 123.6791472758964;BELUM;Masjid
+Kupang;KUPANG TENGAH;DESA MATA AIR KEC. KUPANG TENGAH KAB. KUPANG;Masjid;MASJID ASSHOLIHIN;512;3/28/1994;-;-;M. KASIM SALEH;ARWADI SETIAWAN;1541;-10.13347686805268, 123.69033913357285;BELUM;Masjid
+Kupang;FATULEU;JL. TIMOR RAYA KM. 38 DESA KUIMASI KEC. FATULEU KAB. KUPANG;Masjid;MASJID AL KAUTSAR;-;-;-;-;TANAH NEGARA;MULYADI;2250;-10.062770943927738, 123.87907486834516;BELUM;Masjid
+Kupang;TAKARI;TAKARI;Masjid;PERKUBURAN ISLAM;-;-;-;-;TANAH NEGARA;ALM. AHMAD KIWANG;10000;-9.978704195174679, 124.07604253449625;BELUM;Masjid
+Kupang;AMFOANG UTARA;NAIKLIU;Masjid;MASJID AL IKHLAS;HM. 00227;Monday, April 15, 2019;-;-;KEFETORAN TELNONI DAN CAMAT AMFOANG UTARA (MUH. IDIN);SUPRY TOBY;554;-9.495506072118808, 123.83009817634287;BELUM;Masjid
+Kupang;Sulamu;Kel. Sulamu;MASJID NURUL HUDA;MASJID;2404/2012;11/05/12;-;-;ALI TOGA;H. MAHMUD BEDATING;742;-10.04381929829038, 123.6078942994626;BELUM;Masjid
+Nagekeo;Aesesa;Maropokot;Mushollah;Mushollah At-taqwa Pelabuhan;-;-;-;-;Yusuf Suku;Yayasan Masjid At-Taqwa Maropokot;500;-8.52114841135993, 121.32319748873809;BELUM;Mushalla
+Nagekeo;Nangaroro;Woewutu;Mushollah;Mushollah;-;-;-;-;Harun Pua Mbey;Mohyeden Pua Saba;900;-8.788587578270818, 121.38690412033048;BELUM;Mushalla
+Nagekeo;Mauponggo;Maubajo/Lokalaba;Masjid;Masjid Al Jihad;521/63/NG-WK/91;3/25/1991;0;0;Abdurahman Pogo;Masjid Al Jihad;935;-8.85981546616539, 121.19394858513347;BELUM;Masjid
+Nagekeo;Boawae;Natanage;Masjid;Masjid Baiturrahman;521/63/107/NG-W;11/20/1991;0;0;Suku Deru, Boawae;Umat Islam Boawae;440;-8.766836574099278, 121.16506807404942;BELUM;Masjid
+Sikka;ALOK;Pemana;Masjid;Masjid;24.07.02.12.1.00185;24/03/94;-;0000-00-00;HAK MILIK;NADZIR PERKUBURAN UMAT ISLAM NGOLO;1574;-8.363457723825858, 122.29770713744064;BELUM;Masjid
+Sikka;ALOK;Pemana;Masjid;Masjid;24.07.02.12.1.00178;05/09/92;-;0000-00-00;HAK MILIK;MASJID AL-FATAH PAMANA BUTON;979;-8.350419279777638, 122.32183547770377;BELUM;Masjid
+Sikka;ALOK;Kota Uneng;Masjid;Masjid;24.07.01.01.5.00001;12/03/11;-;11/18/2008;USU USMAN;BAHRUDIN USMAN, S.Pd.I;113;-8.623675684918469, 122.21156283438356;BELUM;Masjid
+Sikka;ALOK;Kota Uneng;Masjid;Masjid;P. 22;0000-00-00;0;0000-00-00;--;Abdurahman Bali;602;-8.61136717121493, 122.21057487680953;BELUM;Masjid
+Sikka;ALOK BARAT;Wuring;Makam;Perkuburan Umum;24.07.14.04.1.01007;02/06/14;-;0000-00-00;HAK MILIK;ABDULLAH DAINAMA;543;-8.60291540639676, 122.19903189231738;BELUM;Makam
+Ende;Ende Selatan;Tanjung;Mushalla Quba;Mushalla Quba;-;-;-;-;-;-;200;-8.870317639188583, 121.6332809255571;BELUM;Mushalla
+Ende;Ende Selatan;Tanjung;Mushalla Al-Mujahidin;Mushalla Al-Mujahidin;-;-;-;-;-;-;200;-8.864630041177124, 121.52202274628108;BELUM;Mushalla
+Ende;Ende Selatan;Rukun Lima;Masjid Nurul Huda;Masjid Nurul Huda;-;-;-;-;-;-;200;-8.855256951416488, 121.64823066868487;BELUM;Masjid
+Ende;Ende Selatan;Mbongawani;Masjid Nur Hidayah;Masjid Nur Hidayah;-;-;-;-;-;-;300;-8.846812262638487, 121.64777864367619;BELUM;Masjid
+Ende;Ende Selatan;Tetandara;Mushalla Nur Hasanah;Mushalla Nur Hasanah;-;-;-;-;-;-;267;-8.84255831735778, 121.65646224246571;BELUM;Mushalla
+Ende;Ende Selatan;Nuamuri;Masjid At Taqwa;Masjid At Taqwa;No.M.509;20/07/93;-;-;Wami Haji;Achmad Pella;267;-8.791636355392578, 121.4198345686514;BELUM;Masjid
+Ende;Ende Selatan;Paupire;Masjid Al-Mujahidin;Masjid Al-Mujahidin;-;-;-;-;-;-;137;-8.861492853098635, 121.6389619317069;BELUM;Masjid
+Ende;Ende Selatan;Roworeke KM 5;Masjid Nurul Iman;Masjid Nurul Iman;-;-;-;-;-;-;454;-8.82921652745048, 121.67851231607963;BELUM;Masjid
+Ende;Ende Utara;KotaRatu;Poliklinik Bersalin Muhammadiyah;Poliklinik Bersalin Muhammadiyah;No.M.270;06/02/95;-;-;-;A. Kadir DM;858;-8.838473755422132, 121.64326010517108;BELUM;Kemaslahatan Umat
+Ende;Ende Utara;Kota Ratu;Masjid Abubekar Sidiq;Masjid Abubekar Sidiq;-;-;-;-;-;-;250;-8.836461264384841, 121.6428195646917;BELUM;Masjid
+Ende;Ende Utara;Kota Ratu;Masjid Mujjahiddin;Masjid Mujjahiddin;-;-;-;-;-;-;300;-8.835252542933587, 121.64320574280246;BELUM;Masjid
+Ende;Pulau Ende;Ndoriwoy;Masjid Nur Hidayah;Masjid Nur Hidayah;-;-;-;-;-;-;225;-8.88219941941757, 121.5106687765569;BELUM;Masjid
+Ende;Pulau Ende;Puutara;Masjid Qilblatain;Masjid Qilblatain;-;-;-;-;-;-;210;-8.863395483317392, 121.52202697208921;BELUM;Masjid
+Ende;Wolowaru;Bokasape;Masjid Nurul Huda;Masjid Nurul Huda;-;-;-;-;-;-;936;-8.795508984540396, 121.88141790795277;BELUM;Masjid
+Ende;Wolowaru;Wolonawa;Masjid Attaqwa Nur Al Anshar;Masjid Attaqwa Nur Al Anshar;-;-;-;-;-;-;546;-8.789057183688584, 121.88026888887794;BELUM;Masjid
+Ende;Wolowaru;Ledasua;Masjid Nurul Iman;Masjid Nurul Iman;-;-;-;-;-;-;200;-8.793307931454239, 121.89930445286679;BELUM;Masjid
+Ende;Wolowaru;Kopo one;Masjid Al-Fatah;Masjid Al-Fatah;-;-;-;-;-;-;613;-8.827411257962096, 121.88343754749972;BELUM;Masjid
+Ende;Wolowaru;Woloboa Mbulilo'o;Masjid Arrahman;Masjid Arrahman;-;-;-;-;-;-;286;-8.778737915797015, 121.85865841681428;BELUM;Masjid
+Ende;Wolowaru;Watumoto Nuamulu;Masjid Nurul Huda;Masjid Nurul Huda;-;-;-;-;-;-;314;-8.851187648255728, 121.83567180121891;BELUM;Masjid
+Ende;Wolowaru;Mbiru Nuamulu;Masjid Baitul Ma'mur;Masjid Baitul Ma'mur;-;-;-;-;-;-;297;-8.830551346154651, 121.82184066649243;BELUM;Masjid
+Ende;Wolowaru;Wolobaso Mbuluwaralau;Masjid Allahu Akbar;Masjid Allahu Akbar;-;-;-;-;-;-;100;-8.802412475772835, 121.87805972584817;BELUM;Masjid
+Ende;Wolowaru;Wolohepo Mbuliwaralau;Masjid Al-A'raf;Masjid Al-A'raf;-;-;-;-;-;-;200;-8.818297197413907, 121.88317182800401;BELUM;Masjid
+Ende;Wolowaru;Watubewa Mbulilo'o;Masjid Nur Ilahi;Masjid Nur Ilahi;-;-;-;-;-;-;136;-8.776846172435716, 121.86022193280361;BELUM;Masjid
+Ende;Wolowaru;Nggaja Mbulilo'o;Masjid Ar Rahman;Masjid Ar Rahman;-;-;-;-;-;-;195;-8.785179996280469, 121.86640611514504;BELUM;Masjid
+Ende;Wolowaru;Pora - Pora;Masjid Jami Taqwa;Masjid Jami Taqwa;-;-;-;-;-;-;319;-8.829812148059826, 121.83577967992211;BELUM;Masjid
+Ende;Lio Timur;Hobakua/ Ndori;Masjid At Taqwa;Masjid At Taqwa;No. M.10;8/13/1993;-;-;Sulaiman Ibrahim Wikti;Ali Wora;564;-8.821536602253566, 121.94591761213454;BELUM;Masjid
+Manggarai Barat;Lembor Selatan ;Nangalili;Masjid Nurul Hidayah;Masjid Nurul Hidayah;HM.31;09/07/92;-;08/12/88;Dg. Mangolo;Ar. Mbode;1408;-8.777487034278519, 120.13136307280232;BELUM;Masjid
+Kota Kupang;KELAPA LIMA;Oesapa;Masjid;Masjid/Tempat Ibadah;3942;-;-;-;H. Baharudin Mide;H. Alimuddin SE;460;-10.146697130102698, 123.64936670893216;BELUM;Masjid
+Kota Kupang;KELAPA LIMA;Lasiana;Masjid;Al Islah Al Islamiyah;-;-;-;-;Elias M. Lujipao, SH;Drs. H. Ahmad Agung LB;625;-10.139753790998881, 123.66809494404494;BELUM;Masjid
+Kota Kupang;OEBOBO;Kayu Putih;Masjid;Masjid Baburahman;-;-;-;-;-;Drs. Abas Kasim;0;-10.161736436663695, 123.6152680824223;BELUM;Masjid
+Kota Kupang;KOTA RAJA;Naikoten I;Masjid;Masjid At Taqwa;-;-;-;-;H. Daeng A.;M. Abdurrahman;500;-10.178940170483427, 123.59882348984416;BELUM;Masjid
+Kota Kupang;Maulafa;BTN Kolhua;Masjid;Masjid;-;-;-;-;PT. Lopo Indah Permai;Drs.A.Shabirin;2;-10.195715404649764, 123.62458268984462;BELUM;Masjid
+Ngada;RIUNG;Desa Tadho Tengah;Masjid;Masjid Al-Fajar;-;-;belum ada data;-;-;-;0;-8.423433981280402, 121.10402784456623;BELUM;Masjid
+Manggarai Timur;Borong;Rana Loba;Masjid Nurul Jihad;Masjid Nurul Jihad;-;-;-;-;-;-;1840;-5.428114462719312, 120.38547683460902;BELUM;Masjid
+Manggarai Timur;Borong;Rana Loba;Pekuburan;Pekuburan;-;-;-;-;-;-;3030;-5.431630235663989, 120.3802351220944;BELUM;Makam
+Manggarai Timur;Borong;Kota Ndora;Masjid Baiturrahman;Masjid Baiturrahman;-;-;-;-;-;-;1064;-8.81861925658038, 120.6134894784696;BELUM;Masjid
+Manggarai Timur;Borong;Nanga Labang;Masjid Muhajirin Cepi Watu;Masjid Muhajirin Cepi Watu;-;-;-;-;-;-;624;-8.813000245791526, 120.58911929352716;BELUM;Masjid
+Manggarai Timur;Lamba Leda;Waso / Satar Padut;Masjid Baburrahman;Masjid Baburrahman;-;-;-;-;-;-;562;-8.300256496949391, 120.55841196283677;BELUM;Masjid

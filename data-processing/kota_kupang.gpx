@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="gpx.py -- https://github.com/tkrajina/gpxpy">
+  <trk>
+    <trkseg>
+      <trkpt lat="-10.146697130102698" lon="123.64936670893216">
+        <name>Masjid/Tempat Ibadah</name>
+      </trkpt>
+      <trkpt lat="-10.139753790998881" lon="123.66809494404494">
+        <name>Al Islah Al Islamiyah</name>
+      </trkpt>
+      <trkpt lat="-10.161736436663695" lon="123.6152680824223">
+        <name>Masjid Baburahman</name>
+      </trkpt>
+      <trkpt lat="-10.178940170483427" lon="123.59882348984416">
+        <name>Masjid At Taqwa</name>
+      </trkpt>
+      <trkpt lat="-10.195715404649764" lon="123.62458268984462">
+        <name>Masjid</name>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

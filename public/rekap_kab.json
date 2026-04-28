@@ -1,0 +1,114 @@
+[
+    {
+        "KABUPATEN": "Flores Timur",
+        "JUMLAH BIDANG": 23,
+        "TOTAL LUAS (M2)": "32035",
+        "SUDAH BERSERTIFIKAT": 22,
+        "BELUM BERSERTIFIKAT": 1,
+        "PERSENTASE (%)": "0.96"
+    },
+    {
+        "KABUPATEN": "Sumba Timur",
+        "JUMLAH BIDANG": 11,
+        "TOTAL LUAS (M2)": "29635",
+        "SUDAH BERSERTIFIKAT": 11,
+        "BELUM BERSERTIFIKAT": 0,
+        "PERSENTASE (%)": "1.00"
+    },
+    {
+        "KABUPATEN": "Sumba Barat",
+        "JUMLAH BIDANG": 5,
+        "TOTAL LUAS (M2)": "8398",
+        "SUDAH BERSERTIFIKAT": 0,
+        "BELUM BERSERTIFIKAT": 5,
+        "PERSENTASE (%)": "0.00"
+    },
+    {
+        "KABUPATEN": "Alor",
+        "JUMLAH BIDANG": 6,
+        "TOTAL LUAS (M2)": "5630",
+        "SUDAH BERSERTIFIKAT": 0,
+        "BELUM BERSERTIFIKAT": 6,
+        "PERSENTASE (%)": "0.00"
+    },
+    {
+        "KABUPATEN": "Sabu Raijua",
+        "JUMLAH BIDANG": 1,
+        "TOTAL LUAS (M2)": "2035",
+        "SUDAH BERSERTIFIKAT": 0,
+        "BELUM BERSERTIFIKAT": 1,
+        "PERSENTASE (%)": "0.00"
+    },
+    {
+        "KABUPATEN": "Malaka",
+        "JUMLAH BIDANG": 5,
+        "TOTAL LUAS (M2)": "8050",
+        "SUDAH BERSERTIFIKAT": 5,
+        "BELUM BERSERTIFIKAT": 0,
+        "PERSENTASE (%)": "1.00"
+    },
+    {
+        "KABUPATEN": "Kupang",
+        "JUMLAH BIDANG": 6,
+        "TOTAL LUAS (M2)": "15267",
+        "SUDAH BERSERTIFIKAT": 0,
+        "BELUM BERSERTIFIKAT": 6,
+        "PERSENTASE (%)": "0.00"
+    },
+    {
+        "KABUPATEN": "Nagekeo",
+        "JUMLAH BIDANG": 4,
+        "TOTAL LUAS (M2)": "2775",
+        "SUDAH BERSERTIFIKAT": 0,
+        "BELUM BERSERTIFIKAT": 4,
+        "PERSENTASE (%)": "0.00"
+    },
+    {
+        "KABUPATEN": "Sikka",
+        "JUMLAH BIDANG": 5,
+        "TOTAL LUAS (M2)": "3811",
+        "SUDAH BERSERTIFIKAT": 0,
+        "BELUM BERSERTIFIKAT": 5,
+        "PERSENTASE (%)": "0.00"
+    },
+    {
+        "KABUPATEN": "Ende",
+        "JUMLAH BIDANG": 26,
+        "TOTAL LUAS (M2)": "8574",
+        "SUDAH BERSERTIFIKAT": 0,
+        "BELUM BERSERTIFIKAT": 26,
+        "PERSENTASE (%)": "0.00"
+    },
+    {
+        "KABUPATEN": "Manggarai Barat",
+        "JUMLAH BIDANG": 1,
+        "TOTAL LUAS (M2)": "1408",
+        "SUDAH BERSERTIFIKAT": 0,
+        "BELUM BERSERTIFIKAT": 1,
+        "PERSENTASE (%)": "0.00"
+    },
+    {
+        "KABUPATEN": "Kota Kupang",
+        "JUMLAH BIDANG": 5,
+        "TOTAL LUAS (M2)": "1587",
+        "SUDAH BERSERTIFIKAT": 0,
+        "BELUM BERSERTIFIKAT": 5,
+        "PERSENTASE (%)": "0.00"
+    },
+    {
+        "KABUPATEN": "Ngada",
+        "JUMLAH BIDANG": 1,
+        "TOTAL LUAS (M2)": "0",
+        "SUDAH BERSERTIFIKAT": 0,
+        "BELUM BERSERTIFIKAT": 1,
+        "PERSENTASE (%)": "0.00"
+    },
+    {
+        "KABUPATEN": "Manggarai Timur",
+        "JUMLAH BIDANG": 5,
+        "TOTAL LUAS (M2)": "7120",
+        "SUDAH BERSERTIFIKAT": 0,
+        "BELUM BERSERTIFIKAT": 5,
+        "PERSENTASE (%)": "0.00"
+    }
+]

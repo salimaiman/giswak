@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GISWAK | Geographic Information System for Wakaf</title>
+
+  <!-- MapLibre & Turf -->
+  <link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet" />
+  <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="style.css?v=2.0">
+</head>
+
+<body class="antialiased bg-gray-50 overflow-hidden">
+  
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-[50] flex items-center justify-between px-6 py-3 bg-emerald-700/90 backdrop-blur-md text-white shadow-lg border-b border-white/10">
+    <div class="flex items-center gap-4">
+      <img src="logo.png" alt="Logo Kemenag" class="h-10 w-auto">
+      <div>
+        <h1 class="text-xl font-bold tracking-tight leading-tight">GISWAK</h1>
+        <p class="text-[10px] uppercase tracking-[0.2em] opacity-80 font-semibold italic">Geographic Information System for Wakaf</p>
+      </div>
+    </div>
+    <div class="hidden md:block">
+      <span class="text-xs bg-emerald-800/50 px-3 py-1 rounded-full border border-white/10">Provinsi Nusa Tenggara Timur</span>
+    </div>
+  </header>
+
+  <!-- Filter Sidebar -->
+  <div id="filterSidebar" class="fixed top-24 left-6 z-[40] w-64 bg-white/80 backdrop-blur-xl p-6 rounded-2xl shadow-2xl border border-white/40 ring-1 ring-black/5 transition-all duration-300">
+    <h2 class="text-sm font-bold text-gray-800 uppercase tracking-wider mb-4 border-b border-gray-100 pb-2">Filter Kategori</h2>
+    <div id="categoryFilters" class="space-y-1 max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
+      <!-- Categories injected here -->
+    </div>
+    <div class="mt-4 pt-4 border-t border-gray-100">
+      <p class="text-[10px] text-gray-500 leading-relaxed italic">Gunakan filter untuk menyaring distribusi tanah wakaf di peta.</p>
+    </div>
+  </div>
+
+  <!-- Map Container -->
+  <main id="map" class="w-full h-screen"></main>
+
+  <!-- Tooltip / Info Label -->
+  <div id="label" class="label"></div>
+
+  <!-- Detail Modal -->
+  <div id="infoModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/40 backdrop-blur-sm transition-all duration-300">
+    <div class="bg-white w-full max-w-xl rounded-3xl shadow-2xl overflow-hidden transform transition-all border border-white/20">
+      <!-- Modal Header -->
+      <div class="bg-emerald-600 px-8 py-6 text-white relative">
+        <h3 id="modalTitle" class="text-2xl font-bold leading-tight pr-8">Tanah Wakaf</h3>
+        <p id="modalDesc" class="text-emerald-100 text-sm mt-1 opacity-90"></p>
+        <button onclick="closeModal()" class="absolute top-6 right-6 text-white/70 hover:text-white transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      
+      <!-- Modal Body -->
+      <div class="px-8 py-6 max-h-[70vh] overflow-y-auto custom-scrollbar">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-1">
+            <p class="text-[10px] font-bold text-gray-400 uppercase">Kabupaten / Kota</p>
+            <p id="m_kabupaten" class="text-sm font-semibold text-gray-800"></p>
+          </div>
+          <div class="space-y-1">
+            <p class="text-[10px] font-bold text-gray-400 uppercase">Kecamatan</p>
+            <p id="m_kecamatan" class="text-sm font-semibold text-gray-800"></p>
+          </div>
+          <div class="space-y-1">
+            <p class="text-[10px] font-bold text-gray-400 uppercase">Peruntukan AIW</p>
+            <p id="m_peruntukan" class="text-sm font-semibold text-gray-800"></p>
+          </div>
+          <div class="space-y-1">
+            <p class="text-[10px] font-bold text-gray-400 uppercase">Luas Tanah</p>
+            <p id="m_luas" class="text-sm font-semibold text-emerald-600 font-mono"></p>
+          </div>
+          <div class="space-y-1">
+            <p class="text-[10px] font-bold text-gray-400 uppercase">Nama Wakif</p>
+            <p id="m_wakif" class="text-sm font-semibold text-gray-800"></p>
+          </div>
+          <div class="space-y-1">
+            <p class="text-[10px] font-bold text-gray-400 uppercase">Nama Nadzir</p>
+            <p id="m_nadzir" class="text-sm font-semibold text-gray-800"></p>
+          </div>
+          <div class="space-y-1">
+            <p class="text-[10px] font-bold text-gray-400 uppercase">Status Sertifikasi</p>
+            <p id="m_status" class="text-sm font-semibold text-gray-800"></p>
+          </div>
+          <div class="space-y-1">
+            <p class="text-[10px] font-bold text-gray-400 uppercase">No. Sertifikat</p>
+            <p id="m_sertifikat" class="text-sm font-semibold text-gray-800"></p>
+          </div>
+        </div>
+        
+        <div class="mt-8 pt-6 border-t border-gray-100 flex items-center justify-between">
+          <a id="m_gmaps" href="#" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold rounded-xl transition-all shadow-lg hover:shadow-blue-200/50">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            Petunjuk Arah
+          </a>
+          <p class="text-[10px] text-gray-400">Sumber: Kementerian Agama RI</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js?v=2.0"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+# Deployment directory
+/giswak/
+
+# Mac OS
+.DS_Store
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+/geojson/
